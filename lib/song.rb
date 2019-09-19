@@ -43,9 +43,9 @@ class Song
     acount = {}
     @@artists.each { | artist |
       if acount[artist]
-        acount[artist] += 1
-      else
         acount[artist] = 1
+      else
+        acount[artist] += 1
       end
     }
     acount
